@@ -1,0 +1,67 @@
+{
+	"events": [{
+		"key": "name",
+		"label": "Event title",
+		"type": "string",
+		"placeholder": "October revolution",
+		"value": null
+	}, {
+		"key": "key",
+		"label": "Hystori key",
+		"type": "string",
+		"placeholder": "rev.october",
+		"value": null
+	}, {
+		"key": "desc",
+		"label": "Event description",
+		"type": "text",
+		"placeholder": null,
+		"value": null
+	}, {
+		"key": "date",
+		"label": "Event date",
+		"type": "date",
+		"placeholder": null,
+		"value": null
+	}],
+
+	"people": [{
+		"key": "name",
+		"label": "Person name",
+		"type": "string",
+		"placeholder": "Trotsky, Leon",
+		"value": null
+	}, {
+		"key": "key",
+		"label": "Hystori key",
+		"type": "string",
+		"placeholder": "leon.trotsky",
+		"value": null
+	}, {
+		"key": "desc",
+		"label": "Person description",
+		"type": "text",
+		"placeholder": null,
+		"value": null
+	}],
+
+	"orgs": [{
+		"key": "name",
+		"label": "Org name",
+		"type": "string",
+		"placeholder": "The Bolsheviks",
+		"value": null
+	}, {
+		"key": "key",
+		"label": "Hystori key",
+		"type": "string",
+		"placeholder": "org.bolsheviks",
+		"value": null
+	}, {
+		"key": "desc",
+		"label": "Org description",
+		"type": "text",
+		"placeholder": null,
+		"value": null
+	}]
+}

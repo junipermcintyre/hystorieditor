@@ -1,0 +1,129 @@
+.editor__mainframe {
+	position: relative;
+	right: 0;
+
+	width: 100%;
+	max-width: 700px;
+	margin: auto;
+
+	transition: 0.3s right ease-out;
+
+	&--editing {
+		right: 225px;
+	}
+
+	&--closed {
+
+	}
+	z-index: 10;
+}
+
+.editor {
+	&__viewer {
+		z-index: 15;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: -450px;
+		width: 416px;
+		min-height: 0;
+		transition: 0.3s left ease-out;
+
+		&--viewing {
+			left: 0;
+		}
+	}
+}
+
+.viewer {
+	&__ux {
+		height: calc(100% - 53px)
+	}
+
+	&__tab {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: -85px;
+		display: inline-block;
+		padding: 20px;
+		transform: rotate(90deg);
+		color: $secondary;
+		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+
+		&:active {
+			background: $primary;
+		}
+
+		&:hover, &:focus {
+			cursor: pointer;
+			box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.3), 0 5px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -7px rgba(0, 0, 0, 0.2);
+		}
+
+		&--viewing {
+			opacity: 0;
+		}
+	}
+
+	&__json {
+		height: 100%;
+	}
+
+	&__code {
+		display: block;
+		height: 100%;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+}
+
+
+
+.editor__aside {
+	z-index: 16;
+	position: fixed;
+	top: 0;
+	right: -450px;
+	width: 416px;
+	height: calc(100% - 30px);
+	transition: 0.3s right ease-out;
+
+	&--editing {
+		right: 0;
+	}
+
+	&--closed {
+
+	}
+}
+
+.aside {
+	&__close {
+		
+	}
+}
+
+.closeBtn {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: flex;
+	width: 40px;
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 25px;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	background: $secondary;
+	transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover, &:focus {
+		cursor: pointer;
+		box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.3), 0 5px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -7px rgba(0, 0, 0, 0.2);
+	}
+
+	&:active {
+		background: $primary;
+	}
+}
