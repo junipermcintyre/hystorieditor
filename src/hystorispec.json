@@ -21,7 +21,7 @@
 		"key": "date",
 		"label": "Event date",
 		"type": "date",
-		"placeholder": null,
+		"placeholder": "1960-06-22",
 		"value": null
 	}],
 
@@ -45,7 +45,7 @@
 		"value": null
 	}],
 
-	"orgs": [{
+	"organizations": [{
 		"key": "name",
 		"label": "Org name",
 		"type": "string",

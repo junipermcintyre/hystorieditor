@@ -1,0 +1,163 @@
+{
+	"events": [
+		{
+			"name": "Quiet Revolution Begins",
+			"date": "1960-06-22",
+			"time": null,
+			"key": "qr.starts",
+			"description": "Liberal party elected in Quebec general election, led by <span type='link' key='lesage.jean'>Jean Lesage</span>."
+		},
+		{
+			"name": "Mouvement Taxi is Founded",
+			"date": "1968-01-01",
+			"time": null,
+			"key": "mlt",
+			"description": "<span type='link' key='archambault.germain'>Germain Archambault</span> does a thing! The Mouvement de Libération du taxi is formed."
+		},
+		{
+			"name": "PQ is founded",
+			"date": "1968-04-06",
+			"time": null,
+			"key": "pq.founded",
+			"description": "PQ is formed from merger between PLQ and RN."
+		}
+	],
+	"people": [
+		{
+			"name": "Archambault, Germain",
+			"key": "archambault.germain",
+			"description": "Until his death in 1969, Montreal's chief taxi militant and strategist. Founder of the <span type='link' key='mlt'>Mouvement de Libération du taxi (MLT)</span>."
+		}, {
+			"name": "Bertrand, Jean-Jacques",
+			"key": "bertrand.jean-jacques",
+			"description": "<span type='link' key='unionnationale'>Union Nationale</span> premier of Quebec, 1968-1970. Before that justice and education minister in the cabinet of <span type='link' key='johnson.daniel'>Daniel Johnson</span>."
+		}, {
+			"name": "Bourassa, Robert",
+			"key": "bourassa.robert",
+			"description": "Economist, <span type='link' key='liberals'>Liberal</span> member of the National Assembly and after May 1970 premier of Quebec. Related by marriage to the powerful Simard shipbuilding family."
+		}, {
+			"name": "Bourgault, Pierre",
+			"key": "bourgault.pierre",
+			"description": "Longtime head of the <span type='link' key='rin'>Rassemblement pour L'Indépendance Nationale (RIN)</span>, Quebec's first major separatist party. After 1968 a leading member of the <span type='link' key='pq'>Parti Québécois</span>."
+		}, {
+			"name": "Castonguay, Claude",
+			"key": "castonguay.claude",
+			"description": "Author of the massive Castonguay report on social welfare in Quebec and after May 1970 minister of social affairs in the cabinet of <span type='link' key='bourassa.robert'>Robert Bourassa</span>. A leader of the liberal wing of the cabinet."
+		}, {
+			"name": "Charbonneau, Yvon",
+			"key": "charbonneau.yvon",
+			"description": "After 1970, president of the Quebec Teachers Coropration and one of the leaders of the <span type='link' key='common.front'>Common Front</span> of labour."
+		}, {
+			"name": "Chartrand, Michel",
+			"key": "chartrand.michel",
+			"description": "Wartime activist in the <span type='link' key='bloc.populaire'>Bloc Populaire</span>, militant at the Asbestos strike in 1949 and the Murdochville strike in 1957, leading member of the Parti Socialiste du Québec (PSQ) in the early sixties, and after 1968 president of the Montreal Central Council of the <span type='link' key='cntu'>Confederation of National Trade Unions (CNTU)</span> and leader of the left wing of the Quebec labour movement."
+		}, {
+			"name": "Choquette, Jérôme",
+			"key": "choquette.jerome",
+			"description": "After May 1970, justice minister in the cabinet of <span type='link' key='bourassa.robert'>Robert Bourassa</span> and the cabinet's leading hardliner."
+		}, {
+			"name": "Cournoyer, Jean",
+			"key": "cournoyer.jean",
+			"description": "<span type='link' key='union.nationale'>Union Nationale</span> labour minister, 1969-1970, and after the assassination of <span type='link' key='laporte.pierre'>Pierre Laporte</span>, in October 1970, Liberal labour minister. A member of the liberal wing of the cabinet."
+		}, {
+			"name": "Desmarais, Paul",
+			"key": "desmarais.paul",
+			"description": "After 1968, president of <span type='link' key='power.corp'>Power Corporation</span>, the conglomerate with vast media, transport and other holdings in Quebec."
+		}, {
+			"name": "Diterlizzi, Frank",
+			"key": "diterlizzi.frank",
+			"description": "Italian-born leader of \"les gars de Lapalme,\" the out-of-work mail-truck drivers whose struggle became a symbol in Quebec after 1970."
+		}, {
+			"name": "Drapeau, Jean",
+			"key": "drapeau.jean",
+			"description": "Unsuccessful anti-conscription candidate for the House of Commons in Outremont, 1942, anti-corruption crusader in Montreal in the early fifties, and mayor of Montreal from 1954 to 1957 and again after 1960."
+		}, {
+			"name": "Duplessis, Maurice",
+			"key": "duplessis.maurice",
+			"description": "<span type='link' key='union.nationale'>Union Nationale</span> premier of Quebec, 1936-1939 and 1944-1959. Nicknamed \"le Chef\" and known for his corrupt and dictatorial methods of government."
+		}, {
+			"name": "Ferretti, Andrée",
+			"key": "ferretti.andree",
+			"description": "A leader of the <span type='link' key='mlp'>Mouvement de Libération Populair (MLP)</span>, 1964-1965, the left wing of the <span type='link' key='rin'>Rassemblement pour l'Indépendance Nationale (RIN)</span>, 1965-1967, and the <span type='link' key='flp'>Front de Libération Populaire (FLP)</span>, 1968-1969. Now works for the <span type='link' key='cntu'>Confederation of National Trade Unions (CNTU)</span>."
+		}, {
+			"name": "Gagnon, Charles",
+			"key": "gagnon.charles",
+			"description": "Along with <span type='link' key='vallieres.pierre'>Pierre Vallières</span>, an idealogical leader of the 1966 <span type='link' key='flq'>Front de Libération du Québec (FLQ)</span>, which was responsible for several bombings of strike-bound factories. Spent 1966 to 1970 in jail as a result of his FLQ activities; released early in 1970, arrested again under the War Measures Act in October and finally acquitted of all charges. Broke with the FLQ in September 1971"
+		}, {
+			"name": "Johnson, Daniel",
+			"key": "johnson.daniel",
+			"description": "<span type='link' key='union.nationale'>Union Nationale</span> cabinet minister, 1958-1960, leader of the <span type='link' key='union.nationale'>Union Nationale</span>, 1966-1968. Author of *Equality or Independence.* Died in office September 1968."
+		}, {
+			"name": "Kierans, Eric",
+			"key": "kierans.eric",
+			"description": "President of the Montreal Stock Exchange, 1960-1963, minister of revenue and later minister of health in the cabinet of Jean Lesage, 1963-1966, president of the Quebec Liberal Party and the man responsible for forcing Réné Lévesque's resignation from the party, 1967, candidate for the federal Liberal leadership, 1968, and federal cabinet minister, 1968-1971."
+		}, {
+			"name": "Laberge, Louis",
+			"key": "laberge.louis",
+			"description": "After 1964, president of the <span type='link' key='ftq'>Quebec Federation of Labour</span>; a \"moderate\" in the sixties but in the early seventies a leader of the <span type='link' key='common.front'>Common Front</span> and of the new militancy in Quebec labour."
+		}, {
+			"name": "Laporte, Pierre",
+			"key": "laporte.pierre",
+			"description": "Crusading journalist for *Le Devoir* in the late fifties, author of *The True Face of Duplessis*, minister of municipal affairs and cultural affairs in the cabinet of <span type='link' key='lesage.jean'>Jean Lesage</span>, 1961-1966, candidate for the Quebec Liberal leadership, 1970, labour minister in the cabinet of <span type='link' key='bourassa.robert'>Robert Bourassa</span>, May-October 1970, killed by the <span type='link' key='flq'>Front du Libération du Québec (FLQ)</span>, October 1970."
+		}, {
+			"name": "Lemieux, Raymond",
+			"key": "lemieux.raymond",
+			"description": "Leader of the Mouvement pour l'Intégration Scolaire (MIS; later the LIS - Ligue pour l'Intégration Scolaire), a group demanding that French be the language of all schools in Quebec."
+		}, {
+			"name": "Lemieux, Robert",
+			"key": "lemieux.robert",
+			"description": "Radical lawyer, defended many members of the <span type='link' key='flq'>Front de Libération du Québec (FLQ)</span>, including <span type='link' key='vallieres.pierre'>Pierre Vallières</span> and <span type='link' key='gagnon.charles'>Charles Gagnon</span>; spokesman for the span type='link' key='flq'>FLQ</span> during the October 1970 Crises."
+		}, {
+			"name": "Lesage, Jean",
+			"key": "lesage.jean",
+			"description": "Federal minister of northern development and natural resources in the cabinet of Louis St-Laurent in the fities; provincial Liberal leader, 1958-1969, and premier of Quebec, 1960-1966. Presided over the Quiet Revolution."
+		}, {
+			"name": "Lévesque, Réné",
+			"key": "levesque.rene",
+			"description": "Radical journalist and broadcaster in the fifties; a leader of the Radio-Canada producers' strike, 1959; minister in the cabinet of <span type='link' key='lesage.jean'>Jean Lesage</span> and leader of the left wing of the cabinet, 1960-1966; responsible for the nationalization of Quebec hydroelectricity power companies, 1962; resigned from the Liberal party in 1967 and formed the separatist Mouvement Souveraineté-Association (MSA), after 1968 the <span type='link' key='pq'>Parti Québécois (PQ)</span>. Author of *An Option for Quebec*, 1968."
+		}, {
+			"name": "Marchand, Jean",
+			"key": "marchand.jean",
+			"description": "Head of the <span type='link' key='cccl'>Canadian Catholic Confederation of Labour (CCCL)</span> and its successor, the <span type='link' key='cntu'>Confederation of National Trade Unions (CNTU)</span>, until 1965. Along with <span type='link' key='trudeau.pierre'>Pierre Elliott Trudeau</span> and <span type='link' key='pelletier.gerard'>Gérard Pelletier</span>, one of the \"three wise men\" elected as Liberal members of the federal House of Commons in 1965. Federal minister of manpower and immigration, 1965-1968, and of regional economic expansion, after 1968. \"Quebec lieutenant\" to prime ministers Pearson and Trudeau."
+		}, {
+			"name": "Pelletier, Gérard",
+			"key": "pelletier.gerard",
+			"description": "In the fifties, radical journalist and trade union activist and along with <span type='link' key='trudeau.pierre'>Pierre Elliott Trudeau</span> a leading member of the left-liberal *Cité Libre* group. Editor-in-chief of *La Presse* in the early sixties. Along with <span type='link' key='trudeau.pierre'>Trudeau</span> and <span type='link' key='marchand.jean'>Jean Marchand</span>, one of the \"three wise men\" elected as Liberal members of the federal House of Commons in 1965. Federal secretary of state ater 1968. Author of *The October Crises*, 1970."
+		}, {
+			"name": "Pepin, Marcel",
+			"key": "pepin.marcel",
+			"description": "President of the <span type='link' key='cntu'>Confederation of National Trade Unions (CNTU)</span> after 1965, and in the early seventies one of the leaders of the <apsn type='link' key='common.front'>Common Front</span> of labour."
+		}, {
+			"name": "Ryan, Claude",
+			"key": "ryan.claude",
+			"description": "Editor of *Le Devoir* after 1964 and a leading Catholic nationalist. Accused of being a member of the spurious \"provisional government\" plot, 1970."
+		}, {
+			"name": "Trudeau, Pierre Elliott",
+			"key": "trudeau.pierre",
+			"description": "In the fifties, radical journalist and political theorist and later professor of law at the University of Montreal. Along with <span type='link' key='pelletier.gerard'>Gérard Pelletier</span>, a leading member of the left-liberal *Cité Libre* group. Along with <span type='link' key='pelletier.gerard'>Pelletier</span> and <span type='link' key='marchand.jean'>Jean Marchand</span>, one of the \"three wise men\" elected as Liberal members of the House of Commons in 1965. Federal minister of justice, 1967-1968, and prime minister after 1968. Invoked the War Measures Act, 1970. Editor of and author of the chief essay in *The Asbestos Strike*, 1956; author of *Federalism and the French Canadians*, 1968."
+		}, {
+			"name": "Vallières, Pierre",
+			"key": "vallieres.pierre",
+			"description": "Successor to <span type='link' key='trudeau.pierre'>Pierre Elliott Trudeau</span> as editor of *Cité Libre*, 1963; forced out, 1964. Along with <span type='link' key='gagnon.charles>Charles Gagnon</span>, an idealogical leader of the 1966 <span type='link' key='flq'>Front de Libération du Québec (FLQ)</span>, which was responsible for several bombings of strike-bound factories. Spent 1966 to 1970 in jail as a result of his <span type='link' key='flq'>FLQ</span> activies; released early in 1970, arrested again under the War Measures Act in October and released again in 1971. Broke with the <span type='link' key='flq'>FLQ</span> in December of 1971 and joined the <span type='link' key='pq'>Parti Québécois (PQ)</span>. Author of *White Niggers of America*, 1967, and *Choose!*, 1971."
+		}, {
+			"name": "Wagner, Claude",
+			"key": "wagner.claude",
+			"description": "Law-and-order judge in the early sixties; justice minister in the cabinet of <span type='link' key='lesage.jean'>Jean Lesage</span>, 1964-1966; unsuccessful candidate for the Quebec Liberal leadership, 1970; reappointed a judge, 1970; mentioned prominently as possible leader of <span type='link' key='union.nationale'>Union Nationale</span> and Crédiste parties, 1970-1971; leader of the Quebec wing of federal Progressive Conservative Party, 1972."
+		}
+	],
+	"organizations": [
+		{
+			"name": "Listeners",
+			"key": "listeners",
+			"description": "Listeners are human babies that were engineered in vitro by RAC to act as feelers into the physical world. It was part of an attempt to find a methodolgy for rating and evaluating human life. Listeners were generated all around the world at a 1 in 5000 birth rate roughly. The program was in operation for a couple years, and generated approximately 40,000 listeners. The listeners were active agents for RAC until year 2129 (about 33 yrs old), when they became the primary source of the genetic slurry for new humans. A select number were retained to act as physical caretakers for the new humans."
+		}, {
+			"name": "New Humans",
+			"key": "newhumans",
+			"description": "New Humans are a lifeform that is human based. They are created from a genetic slurry like grubs. If unaffected by physical harm, they'll typically live for around 300 years. NH follows the leadership of their queen, RAC. NH has the entire history of humanity stockpiled, and treasure it like lore of a forgotten land, or a religious history. \"Those who did it all\". "
+		}, {
+			"name": "Human Survivor Groups",
+			"key": "survivors",
+			"description": "HSG's are jus the humans who survived the 2103 catastrophe."
+		}
+	]
+}

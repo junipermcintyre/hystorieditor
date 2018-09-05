@@ -13,17 +13,17 @@ class HystoriEditor extends React.Component {
     this.events = this.props.data.events;
     this.organizations = this.props.data.organizations;
     this.people = this.props.data.people;
-
-    this.entity = null;
     
     this.state = {          // Set the states (not constant, should trigger re-render)
-      events: this.events,
-      organizations: this.organizations,
-      people: this.people,
-      entity: this.entity,
+      events: JSON.parse(JSON.stringify(this.events)),
+      organizations: JSON.parse(JSON.stringify(this.organizations)),
+      people: JSON.parse(JSON.stringify(this.people)),
+      entity: null,
       viewer: false,
       linkerKey: null,
-      linkerName: null
+      linkerName: null,
+      externalUrl: null,
+      externalLabel: null
     };
     
     this.openNewEntity = this.openNewEntity.bind(this)
@@ -34,6 +34,8 @@ class HystoriEditor extends React.Component {
     this.closeViewer = this.closeViewer.bind(this);
     this.handleLinkerKeyChange = this.handleLinkerKeyChange.bind(this);
     this.handleLinkerNameChange = this.handleLinkerNameChange.bind(this);
+    this.handleExternalUrlChange = this.handleExternalUrlChange.bind(this);
+    this.handleExternalLabelChange = this.handleExternalLabelChange.bind(this);
   }
 
   openNewEntity(t) {  // t = type
@@ -81,12 +83,12 @@ class HystoriEditor extends React.Component {
   saveEditor(aSpec, anEntity) {
     // Check if key exists anywhere, update
     var foundIt = false;
-    var typeArray = this[this.state.entity.type];
-    var evs = JSON.parse(JSON.stringify(this[this.state.entity.type]));
-    for (var i = 0; i < typeArray.length; i++) {      // For the current type (event/org/person)
-      if (typeArray[i].key === anEntity.key) {
+    var evs = JSON.parse(JSON.stringify(this.state[this.state.entity.type]));
+
+    for (var i = 0; i < evs.length; i++) {      // For the current type (event/org/person)
+      if (evs[i].key === anEntity.key) {        // Loop over events/orgs/people, look for matching key
         foundIt = true;
-        evs[i].name = anEntity.name;
+        evs[i].name = anEntity.name;            // Steal its identity
         evs[i].description = anEntity.desc;
         if (this.state.entity.type === "events")    // If its events also add the data before saving
           evs[i].date = anEntity.date;
@@ -96,7 +98,7 @@ class HystoriEditor extends React.Component {
 
 
     // or add if not in correct type
-    console.log(evs);
+    // BTW 'evs' is type neutral !
     if (!foundIt) {
       if (this.state.entity.type === "events") {
         evs.push({
@@ -114,12 +116,11 @@ class HystoriEditor extends React.Component {
         });  
       }
     }
-    console.log(evs);
 
     // Finish up
-    this.setState({
-      events: evs
-    });
+    var stateName = {};
+    stateName[this.state.entity.type] = JSON.parse(JSON.stringify(evs));
+    this.setState(stateName);
     evs = null;
     this.closeEditor();
     // Also notify or somethin of the save
@@ -137,11 +138,23 @@ class HystoriEditor extends React.Component {
     });
   }
 
+  handleExternalUrlChange(evt) {
+    this.setState({
+      externalUrl: evt.target.value
+    });
+  }
+  
+  handleExternalLabelChange(evt) {
+    this.setState({
+      externalLabel: evt.target.value
+    });
+  }
+
   render() {
 
     var eventJSX = this.state.events.map(event =>
       <li key={event.key} className="events__item events__item--closed item" onClick={() => this.editEntity(event, "events")}>
-        {event.name} <small>({event.key})</small>
+        {event.name} <small>({event.key}) ({event.date})</small>
       </li>
     );
 
@@ -158,7 +171,7 @@ class HystoriEditor extends React.Component {
     );
 
 
-
+    // Add Hystori Form
     var editor = null;
     var activeClass = "closed";
     if (this.state.entity !== null) {
@@ -172,9 +185,7 @@ class HystoriEditor extends React.Component {
       activeClass = "editing";
     }
 
-
-
-
+    // Add Hystori Viewer
     var viewer = null;
     var viewerAC = "closed";
     if (this.state.viewer) {
@@ -203,7 +214,7 @@ class HystoriEditor extends React.Component {
           <span className="closeBtn viewer__close" onClick={this.closeViewer}><i className="far fa-window-close"></i></span>
           {viewer}
           <div className={"editor viewer__tab viewer__tab--"+viewerAC} onClick={this.openViewer}>
-            <span className={"viewer__export viewer__export--"+viewerAC}><i class="fas fa-download"></i> Export</span>
+            <span className={"viewer__export viewer__export--"+viewerAC}><i className="fas fa-download"></i> Export</span>
           </div>
         </div>
 
@@ -243,14 +254,21 @@ class HystoriEditor extends React.Component {
           <span className="closeBtn aside__close" onClick={this.closeEditor}><i className="far fa-window-close"></i></span>
           {editor}
           <div className="editor__linker linker">
-            <h3>Linker App</h3>
+            <h3>Hystori Linker</h3>
             Key: <input onChange={this.handleLinkerKeyChange}  className="linker__input linker__key" name="linkerKey" type="string" value={this.state.linkerKey || ""} placeholder="rosa.luxemburg" />
             Name: <input onChange={this.handleLinkerNameChange}  className="linker__input linker__name" name="linkerName" type="string" value={this.state.linkerName || ""} placeholder="Rosa Luxemburg" />
             <div className="linker__display">
-              <pre><code>
-                &lt;span type=&apos;link&apos; key=&apos;{this.state.linkerKey}&apos;&gt;{this.state.linkerName}&lt;/span&gt;
-              </code></pre>
+              &lt;span type=&apos;link&apos; key=&apos;{this.state.linkerKey}&apos;&gt;{this.state.linkerName}&lt;/span&gt;
             </div>
+            <p className="linker__info">Use this tool to add Hystori cross-reference. Key specifies the entity, and the label is what gets rendered.</p>
+
+            <h3>External Linker</h3>
+            URL: <input onChange={this.handleExternalUrlChange} className="linker__input external_url" name="externalUrl" type="string" value={this.state.externalUrl || ""} placeholder="https://wiki.pedia/" />
+            Label: <input onChange={this.handleExternalLabelChange} className="linker__input external_label" name="externalLabel" type="string" value={this.state.externalLabel || ""} placeholder="Article on Wikipedia" />
+            <div className="linker__display">
+              &lt;a href=&apos;{this.state.externalUrl}&apos; target=&apos;blank&apos;&gt;{this.state.externalLabel}&lt;/a&gt;
+            </div>
+            <p className="linker__info">Use this tool to add a regular old hyperlink. You probably knew this, but it's speedy</p>
           </div>
         </div>
       </React.Fragment>

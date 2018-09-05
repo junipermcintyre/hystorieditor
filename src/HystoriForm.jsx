@@ -21,7 +21,7 @@ class HystoriForm extends React.Component {
   }
 
   componentWillReceiveProps(nextProps){
-      if(nextProps.prefix !== this.prefix){
+      if(JSON.stringify(this.spec) !== JSON.stringify(nextProps.spec)){
         var ss = {};
         for (var i = 0; i < nextProps.spec.length; i++)
           ss[nextProps.spec[i].key] = nextProps.spec[i].value || "";
@@ -62,7 +62,7 @@ class HystoriForm extends React.Component {
                     name={this.spec[i].key} 
                     className={this.spec[i].prefix+"__input newEntry__input newEntry__pass"} />;
       } else if (this.spec[i].type === "date") {
-        inputJSX = <input type="date" onChange={this.handleChange} 
+        inputJSX = <input type="text" onChange={this.handleChange} 
                     value={this.state.fields[this.spec[i].key]} placeholder={this.spec[i].placeholder} 
                     name={this.spec[i].key} 
                     className={this.spec[i].prefix+"__input newEntry__input newEntry__date"} />;
