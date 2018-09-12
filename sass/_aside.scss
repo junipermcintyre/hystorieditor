@@ -44,15 +44,17 @@
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
-		right: -85px;
+		right: -76px;
 		display: inline-block;
 		padding: 20px;
 		transform: rotate(90deg);
 		color: $secondary;
 		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+		border-top: 2px solid $secondary;
 
 		&:active {
-			background: $primary;
+			background: $secondary;
+			color: $tertiary;
 		}
 
 		&:hover, &:focus {
@@ -85,8 +87,9 @@
 	top: 0;
 	right: -450px;
 	width: 416px;
-	height: calc(100% - 30px);
+	bottom: 0;
 	transition: 0.3s right ease-out;
+	overflow-y: scroll;
 
 	&--editing {
 		right: 0;
@@ -125,5 +128,21 @@
 
 	&:active {
 		background: $primary;
+	}
+}
+
+
+.linker {
+	&__info {
+		font-style: italic;
+	}
+
+	&__display {
+		background: #fff;
+		color: #000;
+		font-family: 'consolas', sans-serif;
+		margin-top: 14px;
+		padding: 2px 0 0 0;
+		font-size: 10px;
 	}
 }
